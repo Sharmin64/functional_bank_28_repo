@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap ka Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6">Functional <span class="font-medium
+          text-amber-800">Abbu
+          Kaa Bank</span>!!!!!!!</h1>
+    </header>
+    <main>
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+          <div class="bg-lime-300 p-8 text-emerald-900 rounded-md"> <h4
+              class="text-2xl">Deposit</h4>
+            <h2 class="text-3xl font-medium">Taka <span id="deposit-total">00</span></h2>
+          </div>
+
+          <div class="bg-red-400 p-8 text-red-900 rounded-md"> <h4
+              class="text-2xl">Withdraw</h4>
+            <h2 class="text-3xl font-medium">Taka <span id="withdraw-total">00</span></h2>
+          </div>
+
+          <div class="bg-purple-500 p-8 text-purple-900 rounded-md"> <h4
+              class="text-2xl">Balance</h4>
+            <h2 class="text-3xl font-medium">Taka <span id="balance-total">150000</span></h2>
+          </div>
+
+        </div>
+      </section>
+      <section class="w-3/4 mx-auto mt-12">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-400 p-8 rounded-2xl">
+            <h3 class="text-3xl text-white">Please Deposit</h3>
+            <input class="w-11/12 block mb-3 px-3 rounded mt-3" type="email"
+              name=""
+              id="deposit-field"
+              placeholder="Taka Amount you want to deposit">
+
+            <button id="btn-deposit" class="bg-orange-500
+              dark:md:hover:bg-lime-600
+              px-6 py-2
+              mt-3 rounded-md">Deposit</button>
+          </div>
+          <div class="bg-blue-400 p-8 rounded-2xl">
+            <h3 class="text-3xl text-white">Please Withdraw</h3>
+            <input class="w-11/12 block mb-3 px-3 rounded mt-3" type="email"
+              name=""
+              id="withdraw-field"
+              placeholder="Taka Amount you want to Withdraw">
+
+            <button id="btn-withdraw" class="bg-orange-500
+              dark:md:hover:bg-fuchsia-600
+              px-6 py-2
+              mt-3 rounded-md">Withdraw</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ?js file link here -->
+    <script src="./js_file/utility.js"></script>
+    <script src="./js_file/deposit.js"></script>
+    <script src="./js_file/withdraw.js"></script>
+  </body>
+</html>
